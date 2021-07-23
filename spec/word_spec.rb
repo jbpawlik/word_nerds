@@ -23,24 +23,26 @@ describe('#word') do
     end
   end
 
-  # describe('.all') do
-  #   it('returns saved Words') do
-  #     word = Word.new({:name => 'reff', :id => nil})
-  #     word.save
-  #     expect(Word.all).to(eq([word]))
-  #   end
-  # end
+  describe('.all') do
+    it('returns saved Words') do
+      word = Word.new({:name => 'reff', :id => nil})
+      word.save
+      word2 = Word.new({:name => 'alis', :id => nil})
+      word2.save
+      expect(Word.all).to(eq([word, word2]))
+    end
+  end
 
-  # describe('#==') do
-  #   it('is the same word if it has the same attributes as another word') do
-  #     word = Word.new({:name => 'reff', :id => nil})
-  #     word.save
-  #     expect(Word.all).to(eq([word]))
-  #     word2 = Word.new({:name => 'alis', :id => nil})
-  #     word2.save
-  #     expect(Word.all).to(eq([word]))
-  #   end
-  # end
+  describe('#==') do
+    it('refers to the same word if it has the same attributes as another word') do
+      word = Word.new({:name => 'reff', :id => nil})
+      word.save
+      expect(Word.all).to(eq([word]))
+      word2 = Word.new({:name => 'reff', :id => nil})
+      word2.save
+      expect(word).to(eq(word2))
+    end
+  end
 
 
 end

@@ -22,4 +22,9 @@ class Word
     @@words[self.id] = Word.new({:name => self.name, :id => self.id})
   end
 
+  def self.clear
+    @@words = {}
+    @@total_rows = 0
+  end
+
 end
