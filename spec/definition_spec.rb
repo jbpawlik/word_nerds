@@ -33,4 +33,15 @@ describe('#definition') do
     end
   end
 
+  describe('#==') do
+    it('allows two definitions to have the same attributes') do
+      definition = Definition.new({:meaning => 'porridge', :id => nil})
+      definition.save
+      definition2 = Definition.new({:meaning => 'porridge', :id => nil})
+      definition2.save
+      expect(definition).to(eq(definition2))
+    end
+  end
+
+
 end
