@@ -11,7 +11,14 @@ describe('#definition') do
     end
   end
 
-  
+  describe('#save') do
+    it('saves a definition') do
+      definition = Definition.new({:meaning => 'porridge', :id => nil})
+      definition.save
+      expect(Definition.all).to(eq([definition]))
+    end
+  end
 
+  
 
 end
