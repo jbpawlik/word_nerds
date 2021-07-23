@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-07-23T10:08:21-07:00">2021-07-23T10:08:21-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-07-23T10:14:21-07:00">2021-07-23T10:14:21-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  97.14%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.77
+         1.76
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>125</b> relevant lines,
-    <span class="green"><b>125</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>140</b> relevant lines,
+    <span class="green"><b>136</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  97.14%
 </span>
 )
   </div>
@@ -72,12 +72,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#27498f084818a275ce625998e9936507f988485c" class="src_link" title="app.rb">app.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">43</td>
-            <td class="cell--number">29</td>
-            <td class="cell--number">29</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.28</td>
+            <td class="yellow strong cell--number t-file__coverage">88.24 %</td>
+            <td class="cell--number">50</td>
+            <td class="cell--number">34</td>
+            <td class="cell--number">30</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">1.12</td>
             
           </tr>
         
@@ -95,11 +95,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#f5594fa4bb4ec90fa878b2583e50fe77e732408b" class="src_link" title="lib/word.rb">lib/word.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">39</td>
-            <td class="cell--number">21</td>
-            <td class="cell--number">21</td>
+            <td class="cell--number">42</td>
+            <td class="cell--number">23</td>
+            <td class="cell--number">23</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">4.90</td>
+            <td class="cell--number">5.17</td>
             
           </tr>
         
@@ -128,9 +128,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#1578dd667a5453c2c02d568bc27e8ca07d8678fd" class="src_link" title="spec/word_spec.rb">spec/word_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">78</td>
-            <td class="cell--number">50</td>
-            <td class="cell--number">50</td>
+            <td class="cell--number">89</td>
+            <td class="cell--number">58</td>
+            <td class="cell--number">58</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.12</td>
             
@@ -157,8 +157,8 @@
   <div class="header">
     <h3>app.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="yellow">
+  88.24%
 </span>
 
       lines covered
@@ -167,9 +167,9 @@
     
 
     <div class="t-line-summary">
-      <b>29</b> relevant lines.
-      <span class="green"><b>29</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>34</b> relevant lines.
+      <span class="green"><b>30</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
 
     
@@ -652,6 +652,83 @@
           </li>
         </div>
       
+        <div>
+          <li class="never" data-hits="" data-linenumber="44">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="45">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">delete(&#39;/words/:id&#39;) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="46">
+            
+            
+
+            
+
+            <code class="ruby">  @word = Word.find(params[:id].to_i())</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="47">
+            
+            
+
+            
+
+            <code class="ruby">  @word.delete()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby">  @words = Word.all</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="49">
+            
+            
+
+            
+
+            <code class="ruby">  erb(:words)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="50">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
     </ol>
   </pre>
 </div>
@@ -702,8 +779,8 @@
     
 
     <div class="t-line-summary">
-      <b>21</b> relevant lines.
-      <span class="green"><b>21</b> lines covered</span> and
+      <b>23</b> relevant lines.
+      <span class="green"><b>23</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -803,8 +880,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="22" data-linenumber="9">
-            <span class="hits">22</span>
+          <li class="covered" data-hits="26" data-linenumber="9">
+            <span class="hits">26</span>
             
 
             
@@ -814,8 +891,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="22" data-linenumber="10">
-            <span class="hits">22</span>
+          <li class="covered" data-hits="26" data-linenumber="10">
+            <span class="hits">26</span>
             
 
             
@@ -858,8 +935,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="14">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="10" data-linenumber="14">
+            <span class="hits">10</span>
             
 
             
@@ -902,8 +979,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="18">
-            <span class="hits">5</span>
+          <li class="covered" data-hits="6" data-linenumber="18">
+            <span class="hits">6</span>
             
 
             
@@ -946,8 +1023,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="11" data-linenumber="22">
-            <span class="hits">11</span>
+          <li class="covered" data-hits="13" data-linenumber="22">
+            <span class="hits">13</span>
             
 
             
@@ -990,8 +1067,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="26">
-            <span class="hits">8</span>
+          <li class="covered" data-hits="9" data-linenumber="26">
+            <span class="hits">9</span>
             
 
             
@@ -1001,8 +1078,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="27">
-            <span class="hits">8</span>
+          <li class="covered" data-hits="9" data-linenumber="27">
+            <span class="hits">9</span>
             
 
             
@@ -1122,18 +1199,51 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="38">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="38">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">  def delete</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="39">
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @@words.delete(self.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="40">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="42">
             
             
 
@@ -1708,8 +1818,8 @@
     
 
     <div class="t-line-summary">
-      <b>50</b> relevant lines.
-      <span class="green"><b>50</b> lines covered</span> and
+      <b>58</b> relevant lines.
+      <span class="green"><b>58</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1809,8 +1919,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="9">
-            <span class="hits">7</span>
+          <li class="covered" data-hits="8" data-linenumber="9">
+            <span class="hits">8</span>
             
 
             
@@ -2546,7 +2656,117 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="76">
+          <li class="covered" data-hits="1" data-linenumber="76">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe(&#39;#delete&#39;) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="77">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it(&quot;deletes a word by id&quot;) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="78">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      word = Word.new({:name =&gt; &quot;reff&quot;, :id =&gt; nil})</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="79">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      word.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="80">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      word2 = Word.new({:name =&gt; &quot;alis&quot;, :id =&gt; nil})</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="81">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      word2.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="82">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      word.delete()</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="83">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(Word.all).to(eq([word2]))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="84">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="85">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="86">
             
             
 
@@ -2557,7 +2777,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="77">
+          <li class="never" data-hits="" data-linenumber="87">
             
             
 
@@ -2568,7 +2788,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="78">
+          <li class="never" data-hits="" data-linenumber="88">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="89">
             
             
 
