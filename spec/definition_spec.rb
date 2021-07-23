@@ -43,5 +43,15 @@ describe('#definition') do
     end
   end
 
+  describe('.clear') do
+    it('will clear all saved definitions') do
+      definition = Definition.new({:meaning => 'porridge', :id => nil})
+      definition.save
+      definition2 = Definition.new({:meaning => 'rainbow', :id => nil})
+      definition2.save
+      Definition.clear
+      expect(Definition.all).to(eq([]))
+    end
+  end
 
 end
