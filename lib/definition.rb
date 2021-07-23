@@ -35,7 +35,9 @@ class Definition
     @meaning = meaning
   end
 
-  
+  def delete
+    @@definitions.delete(self.id)
+  end
 
 
 end
