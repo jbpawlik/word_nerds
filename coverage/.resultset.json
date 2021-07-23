@@ -103,12 +103,40 @@
       },
       "C:/Users/redux/Epicodus/Week9/word_nerds/lib/definition.rb": {
         "lines": [
-
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
         ]
       },
       "C:/Users/redux/Epicodus/Week9/word_nerds/spec/definition_spec.rb": {
         "lines": [
-
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
         ]
       },
       "C:/Users/redux/Epicodus/Week9/word_nerds/spec/word_integration_spec.rb": {
@@ -263,6 +291,6 @@
         ]
       }
     },
-    "timestamp": 1627061028
+    "timestamp": 1627065508
   }
 }
