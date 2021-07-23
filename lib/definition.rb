@@ -27,4 +27,10 @@ class Definition
     @@total_rows = 0
   end
 
+  def self.find(id)
+    @@definitions[id]
+  end
+
+  
+
 end
