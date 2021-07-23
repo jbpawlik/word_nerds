@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-07-23T14:16:15-07:00">2021-07-23T14:16:15-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-07-23T15:02:59-07:00">2021-07-23T15:02:59-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  96.34%
+  96.86%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.0
+         2.09
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>246</b> relevant lines,
-    <span class="green"><b>237</b> lines covered</span> and
-    <span class="red"><b>9</b> lines missed. </span>
+    <b>255</b> relevant lines,
+    <span class="green"><b>247</b> lines covered</span> and
+    <span class="red"><b>8</b> lines missed. </span>
     (<span class="green">
-  96.34%
+  96.86%
 </span>
 )
   </div>
@@ -83,12 +83,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#d4c0eaafaeee46e5869f20fb362f8cd2b4dd0527" class="src_link" title="lib/definition.rb">lib/definition.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">93.75 %</td>
+            <td class="green strong cell--number t-file__coverage">96.88 %</td>
             <td class="cell--number">57</td>
             <td class="cell--number">32</td>
-            <td class="cell--number">30</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">4.59</td>
+            <td class="cell--number">31</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">5.44</td>
             
           </tr>
         
@@ -99,16 +99,16 @@
             <td class="cell--number">25</td>
             <td class="cell--number">25</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">5.20</td>
+            <td class="cell--number">5.40</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#befa0996c417f513f34279fadc6df93080720b20" class="src_link" title="spec/definition_spec.rb">spec/definition_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">87</td>
-            <td class="cell--number">58</td>
-            <td class="cell--number">58</td>
+            <td class="cell--number">99</td>
+            <td class="cell--number">67</td>
+            <td class="cell--number">67</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.12</td>
             
@@ -970,7 +970,7 @@
     <h3>lib/definition.rb</h3>
     <h4>
       <span class="green">
-  93.75%
+  96.88%
 </span>
 
       lines covered
@@ -980,8 +980,8 @@
 
     <div class="t-line-summary">
       <b>32</b> relevant lines.
-      <span class="green"><b>30</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <span class="green"><b>31</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
 
     
@@ -1080,8 +1080,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="9">
-            <span class="hits">24</span>
+          <li class="covered" data-hits="28" data-linenumber="9">
+            <span class="hits">28</span>
             
 
             
@@ -1091,19 +1091,19 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="10">
-            <span class="hits">24</span>
+          <li class="covered" data-hits="28" data-linenumber="10">
+            <span class="hits">28</span>
             
 
             
 
-            <code class="ruby">    @word_id = word_id</code>
+            <code class="ruby">    @word_id = attributes.fetch(:word_id)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="11">
-            <span class="hits">24</span>
+          <li class="covered" data-hits="28" data-linenumber="11">
+            <span class="hits">28</span>
             
 
             
@@ -1190,8 +1190,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="19">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="7" data-linenumber="19">
+            <span class="hits">7</span>
             
 
             
@@ -1234,13 +1234,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="23">
-            <span class="hits">12</span>
+          <li class="covered" data-hits="14" data-linenumber="23">
+            <span class="hits">14</span>
             
 
             
 
-            <code class="ruby">    @@definitions[self.definition_id] = Definition.new({:meaning =&gt; self.meaning, :definition_id =&gt; self.definition_id})</code>
+            <code class="ruby">    @@definitions[self.definition_id] = Definition.new({:meaning =&gt; self.meaning, :word_id =&gt; self.word_id, :definition_id =&gt; self.definition_id})</code>
           </li>
         </div>
       
@@ -1278,8 +1278,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="27">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="10" data-linenumber="27">
+            <span class="hits">10</span>
             
 
             
@@ -1289,8 +1289,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="9" data-linenumber="28">
-            <span class="hits">9</span>
+          <li class="covered" data-hits="10" data-linenumber="28">
+            <span class="hits">10</span>
             
 
             
@@ -1333,8 +1333,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="32">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="5" data-linenumber="32">
+            <span class="hits">5</span>
             
 
             
@@ -1344,8 +1344,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="33">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="5" data-linenumber="33">
+            <span class="hits">5</span>
             
 
             
@@ -1355,8 +1355,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="34">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="10" data-linenumber="34">
+            <span class="hits">10</span>
             
 
             
@@ -1366,8 +1366,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="35">
-            
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
             
 
             
@@ -1399,8 +1399,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="38">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="5" data-linenumber="38">
+            <span class="hits">5</span>
             
 
             
@@ -1738,8 +1738,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="26" data-linenumber="9">
-            <span class="hits">26</span>
+          <li class="covered" data-hits="28" data-linenumber="9">
+            <span class="hits">28</span>
             
 
             
@@ -1749,8 +1749,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="26" data-linenumber="10">
-            <span class="hits">26</span>
+          <li class="covered" data-hits="28" data-linenumber="10">
+            <span class="hits">28</span>
             
 
             
@@ -1881,8 +1881,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="13" data-linenumber="22">
-            <span class="hits">13</span>
+          <li class="covered" data-hits="14" data-linenumber="22">
+            <span class="hits">14</span>
             
 
             
@@ -2174,8 +2174,8 @@
     
 
     <div class="t-line-summary">
-      <b>58</b> relevant lines.
-      <span class="green"><b>58</b> lines covered</span> and
+      <b>67</b> relevant lines.
+      <span class="green"><b>67</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2275,8 +2275,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="9">
-            <span class="hits">8</span>
+          <li class="covered" data-hits="9" data-linenumber="9">
+            <span class="hits">9</span>
             
 
             
@@ -2402,7 +2402,7 @@
 
             
 
-            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :definition_id =&gt; nil})</code>
+            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :word_id =&gt; nil, :definition_id =&gt; nil})</code>
           </li>
         </div>
       
@@ -2490,7 +2490,7 @@
 
             
 
-            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :definition_id =&gt; nil})</code>
+            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :word_id =&gt; nil, :definition_id =&gt; nil})</code>
           </li>
         </div>
       
@@ -2512,7 +2512,7 @@
 
             
 
-            <code class="ruby">      definition2 = Definition.new({:meaning =&gt; &#39;rainbow&#39;, :definition_id =&gt; nil})</code>
+            <code class="ruby">      definition2 = Definition.new({:meaning =&gt; &#39;rainbow&#39;, :word_id =&gt; nil, :definition_id =&gt; nil})</code>
           </li>
         </div>
       
@@ -2600,7 +2600,7 @@
 
             
 
-            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :definition_id =&gt; nil})</code>
+            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :word_id =&gt; nil, :definition_id =&gt; nil})</code>
           </li>
         </div>
       
@@ -2622,7 +2622,7 @@
 
             
 
-            <code class="ruby">      definition2 = Definition.new({:meaning =&gt; &#39;porridge&#39;, :definition_id =&gt; nil})</code>
+            <code class="ruby">      definition2 = Definition.new({:meaning =&gt; &#39;porridge&#39;, :word_id =&gt; nil, :definition_id =&gt; nil})</code>
           </li>
         </div>
       
@@ -2710,7 +2710,7 @@
 
             
 
-            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :definition_id =&gt; nil})</code>
+            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :word_id =&gt; nil, :definition_id =&gt; nil})</code>
           </li>
         </div>
       
@@ -2732,7 +2732,7 @@
 
             
 
-            <code class="ruby">      definition2 = Definition.new({:meaning =&gt; &#39;rainbow&#39;, :definition_id =&gt; nil})</code>
+            <code class="ruby">      definition2 = Definition.new({:meaning =&gt; &#39;rainbow&#39;, :word_id =&gt; nil, :definition_id =&gt; nil})</code>
           </li>
         </div>
       
@@ -2831,7 +2831,7 @@
 
             
 
-            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :definition_id =&gt; nil})</code>
+            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :word_id =&gt; nil, :definition_id =&gt; nil})</code>
           </li>
         </div>
       
@@ -2853,7 +2853,7 @@
 
             
 
-            <code class="ruby">      definition2 = Definition.new({:meaning =&gt; &#39;rainbow&#39;, :definition_id =&gt; nil})</code>
+            <code class="ruby">      definition2 = Definition.new({:meaning =&gt; &#39;rainbow&#39;, :word_id =&gt; nil, :definition_id =&gt; nil})</code>
           </li>
         </div>
       
@@ -2941,7 +2941,7 @@
 
             
 
-            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :definition_id =&gt; nil})</code>
+            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :word_id =&gt; nil, :definition_id =&gt; nil})</code>
           </li>
         </div>
       
@@ -3040,7 +3040,7 @@
 
             
 
-            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :definition_id =&gt; nil})</code>
+            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :word_id =&gt; nil, :definition_id =&gt; nil})</code>
           </li>
         </div>
       
@@ -3062,7 +3062,7 @@
 
             
 
-            <code class="ruby">      definition2 = Definition.new({:meaning =&gt; &#39;rainbow&#39;, :definition_id =&gt; nil})</code>
+            <code class="ruby">      definition2 = Definition.new({:meaning =&gt; &#39;rainbow&#39;, :word_id =&gt; nil, :definition_id =&gt; nil})</code>
           </li>
         </div>
       
@@ -3133,7 +3133,139 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="87">
+          <li class="covered" data-hits="1" data-linenumber="87">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe(&#39;.find_by_word&#39;) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="88">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it(&quot;finds definitions for a word&quot;) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="89">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      word2 = Word.new({:name =&gt; &quot;reff&quot;, :id =&gt; nil})</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="90">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      word2.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="91">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      definition = Definition.new({:meaning =&gt; &#39;porridge&#39;, :word_id =&gt; nil, :definition_id =&gt; nil})</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="92">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      definition.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="93">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      definition2 = Definition.new({:meaning =&gt; &#39;rainbow&#39;, :word_id =&gt; word2.id, :definition_id =&gt; nil})</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="94">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      definition2.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="95">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(Definition.find_by_word(word2.id)).to(eq([definition2]))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="96">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="97">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="98">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="99">
             
             
 

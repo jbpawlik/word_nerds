@@ -7,7 +7,7 @@ class Definition
 
   def initialize(attributes)
     @meaning = attributes.fetch(:meaning)
-    @word_id = word_id
+    @word_id = attributes.fetch(:word_id)
     @definition_id = attributes.fetch(:definition_id) || @@total_rows += 1
   end
 
@@ -20,7 +20,7 @@ class Definition
   end
 
   def save
-    @@definitions[self.definition_id] = Definition.new({:meaning => self.meaning, :definition_id => self.definition_id})
+    @@definitions[self.definition_id] = Definition.new({:meaning => self.meaning, :word_id => self.word_id, :definition_id => self.definition_id})
   end
 
   def self.clear

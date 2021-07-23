@@ -3,15 +3,17 @@
 
 <h3>Definitions for the word:</h3>
 
-  <% if @word.definitions %>
+<% if @word.definitions %>
     <ul>
       <% @word.definitions.each do |definition| %>
-        <li><a href="/words/<%= @word.id %>/definitions/<%= definition.id %>"><%= definition.name %></a></li>
+        <li><a href="/words/<%= @word.id %>/definitions/<%= definition.id %>"><%= definition.meaning %></a></li>
       <% end %>
     </ul>
   <% else %>
     <p>There are no definitions listed for this word yet.</p>
   <% end %>
+
+
 
 <h4><a href="/words/<%= @word.id %>/new">Write a New Definition</a></h4>
 
