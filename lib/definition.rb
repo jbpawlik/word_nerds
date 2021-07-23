@@ -1,12 +1,13 @@
 class Definition
   attr_reader :definition_id
-  attr_accessor :meaning
+  attr_accessor :meaning, :word_id
 
     @@definitions = {}
     @@total_rows = 0
 
   def initialize(attributes)
     @meaning = attributes.fetch(:meaning)
+    @word_id = word_id
     @definition_id = attributes.fetch(:definition_id) || @@total_rows += 1
   end
 
@@ -19,7 +20,7 @@ class Definition
   end
 
   def save
-    @@definitions[self.id] = Definition.new({:meaning => self.meaning, :id => self.id})
+    @@definitions[self.definition_id] = Definition.new({:meaning => self.meaning, :definition_id => self.definition_id})
   end
 
   def self.clear
@@ -46,7 +47,7 @@ class Definition
   end
 
   def delete
-    @@definitions.delete(self.id)
+    @@definitions.delete(self.definition_id)
   end
 
   def word

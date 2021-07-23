@@ -17,7 +17,7 @@ describe('#definition') do
 
   describe('#save') do
     it('saves a definition') do
-      definition = Definition.new({:meaning => 'porridge', :id => nil})
+      definition = Definition.new({:meaning => 'porridge', :definition_id => nil})
       definition.save
       expect(Definition.all).to(eq([definition]))
     end
@@ -25,9 +25,9 @@ describe('#definition') do
 
   describe('.all') do
     it('returns saved definitions') do
-      definition = Definition.new({:meaning => 'porridge', :id => nil})
+      definition = Definition.new({:meaning => 'porridge', :definition_id => nil})
       definition.save
-      definition2 = Definition.new({:meaning => 'rainbow', :id => nil})
+      definition2 = Definition.new({:meaning => 'rainbow', :definition_id => nil})
       definition2.save
       expect(Definition.all).to(eq([definition, definition2]))
     end
@@ -35,9 +35,9 @@ describe('#definition') do
 
   describe('#==') do
     it('allows two definitions to have the same attributes') do
-      definition = Definition.new({:meaning => 'porridge', :id => nil})
+      definition = Definition.new({:meaning => 'porridge', :definition_id => nil})
       definition.save
-      definition2 = Definition.new({:meaning => 'porridge', :id => nil})
+      definition2 = Definition.new({:meaning => 'porridge', :definition_id => nil})
       definition2.save
       expect(definition).to(eq(definition2))
     end
@@ -45,9 +45,9 @@ describe('#definition') do
 
   describe('.clear') do
     it('will clear all saved definitions') do
-      definition = Definition.new({:meaning => 'porridge', :id => nil})
+      definition = Definition.new({:meaning => 'porridge', :definition_id => nil})
       definition.save
-      definition2 = Definition.new({:meaning => 'rainbow', :id => nil})
+      definition2 = Definition.new({:meaning => 'rainbow', :definition_id => nil})
       definition2.save
       Definition.clear
       expect(Definition.all).to(eq([]))
@@ -56,17 +56,17 @@ describe('#definition') do
 
   describe('.find') do
     it("will find a definition by its id") do
-      definition = Definition.new({:meaning => 'porridge', :id => nil})
+      definition = Definition.new({:meaning => 'porridge', :definition_id => nil})
       definition.save
-      definition2 = Definition.new({:meaning => 'rainbow', :id => nil})
+      definition2 = Definition.new({:meaning => 'rainbow', :definition_id => nil})
       definition2.save
-      expect(Definition.find(definition2.id)).to(eq(definition2))
+      expect(Definition.find(definition2.definition_id)).to(eq(definition2))
     end
   end
 
   describe('#update') do
     it('will update a definition') do
-      definition = Definition.new({:meaning => 'porridge', :id => nil})
+      definition = Definition.new({:meaning => 'porridge', :definition_id => nil})
       definition.save
       definition.update({:meaning => "slop"})
       expect(definition.meaning).to(eq({:meaning=> "slop"}))
@@ -75,9 +75,9 @@ describe('#definition') do
 
   describe('#delete') do
     it("deletes a definition by id") do
-      definition = Definition.new({:meaning => 'porridge', :id => nil})
+      definition = Definition.new({:meaning => 'porridge', :definition_id => nil})
       definition.save
-      definition2 = Definition.new({:meaning => 'rainbow', :id => nil})
+      definition2 = Definition.new({:meaning => 'rainbow', :definition_id => nil})
       definition2.save
       definition.delete()
       expect(Definition.all).to(eq([definition2]))
