@@ -4,7 +4,7 @@
   <input name="_method" type="hidden" value="patch">
   <div>
     <label for="name">Rename word</label>
-    <input id="name" name="name" type="text">
+    <input id="name" name="name" type="text" required>
   </div>
  
   <button type="submit">Rename Word</button>
@@ -13,7 +13,7 @@
 <form action="/words/<%= @word.id %>" method="post">
   <input name="_method" type="hidden" value="delete">
 
-  <button type="submit">Delete word</button> 
+  <button type="submit">Delete Word</button> 
 </form>
 
-<p><a href="/words">Return to album list</a></p>
+<p><a href="/words">Return to Word List</a></p>

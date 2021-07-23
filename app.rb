@@ -44,7 +44,7 @@ end
 
 delete('/words/:id') do
   @word = Word.find(params[:id].to_i())
-  @word.delete()
+  @word.delete
   @words = Word.all
   erb(:words)
 end
