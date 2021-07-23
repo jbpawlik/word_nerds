@@ -4,13 +4,24 @@
       "C:/Users/redux/Epicodus/Week9/word_nerds/lib/word.rb": {
         "lines": [
           1,
-          null,
           1,
           1,
           null,
           1,
-          0,
-          0,
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
           null,
           null,
           1,
@@ -21,6 +32,6 @@
         ]
       }
     },
-    "timestamp": 1627053520
+    "timestamp": 1627054857
   }
 }
