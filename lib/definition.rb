@@ -14,8 +14,17 @@ class Definition
     @@definitions.values
   end
 
+  def ==(definition_to_compare)
+    self.meaning == definition_to_compare.meaning
+  end
+
   def save
     @@definitions[self.id] = Definition.new({:meaning => self.meaning, :id => self.id})
+  end
+
+  def self.clear
+    @@definitions = {}
+    @@total_rows = 0
   end
 
 end
