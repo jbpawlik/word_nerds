@@ -44,11 +44,3 @@ describe('delete a word', {:type => :feature}) do
 end
 
 
-# describe('create a definition for the word', {:type => :feature}) do
-#   it('goes to the word page and writes a definition') do
-#     visit('/')
-#     click_on('Lordoone')
-#     click_on('Write a new definition')
-#   end
-# end
-

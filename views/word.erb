@@ -1,20 +1,20 @@
-<h2>Word Name: <%= @word.name %></h2>
-<p><a href="/words/<%= @word.id %>/edit">Edit Word</a></p>
 
-<h3>Definitions for the word:</h3>
+<h2><a href="/words/<%= @word.id %>/edit"><%= @word.name %></a></h2>
+<h6>(click to edit word)</h6>
 
-<% if @word.definitions %>
+<h3>Possible meanings:</h3>
+
+<% if @word.definitions.any? %>
     <ul>
       <% @word.definitions.each do |definition| %>
         <li><a href="/words/<%= @word.id %>/definitions/<%= definition.id %>"><%= definition.meaning %></a></li>
       <% end %>
     </ul>
+    <a href="/words/<%= @word.id %>/new">Add another meaning?</a>
   <% else %>
-    <p>There are no definitions listed for this word yet.</p>
+    <h4>Nobody knows... <a href="/words/<%= @word.id %>/new">unless you do?</a></h4>
   <% end %>
 
+<h4></h4>
 
-
-<h4><a href="/words/<%= @word.id %>/new">Write a New Definition</a></h4>
-
-<p><a href="/words">Return to Word List</a></p>
+<p><a href="/words">Back to Word List</a></p>
