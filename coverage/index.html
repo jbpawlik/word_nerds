@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-07-23T09:40:36-07:00">2021-07-23T09:40:36-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-07-23T09:58:04-07:00">2021-07-23T09:58:04-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  98.17%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.81
+         1.78
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>98</b> relevant lines,
-    <span class="green"><b>98</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>109</b> relevant lines,
+    <span class="green"><b>107</b> lines covered</span> and
+    <span class="red"><b>2</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  98.17%
 </span>
 )
   </div>
@@ -72,12 +72,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#27498f084818a275ce625998e9936507f988485c" class="src_link" title="app.rb">app.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">27</td>
-            <td class="cell--number">18</td>
-            <td class="cell--number">18</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.28</td>
+            <td class="green strong cell--number t-file__coverage">90.48 %</td>
+            <td class="cell--number">32</td>
+            <td class="cell--number">21</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">1.14</td>
             
           </tr>
         
@@ -95,11 +95,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#f5594fa4bb4ec90fa878b2583e50fe77e732408b" class="src_link" title="lib/word.rb">lib/word.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">35</td>
-            <td class="cell--number">19</td>
-            <td class="cell--number">19</td>
+            <td class="cell--number">39</td>
+            <td class="cell--number">21</td>
+            <td class="cell--number">21</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">4.63</td>
+            <td class="cell--number">4.62</td>
             
           </tr>
         
@@ -117,7 +117,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c95a75e674ad55240243d01c6863e98c2e4bc825" class="src_link" title="spec/word_integration_spec.rb">spec/word_integration_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">23</td>
+            <td class="cell--number">35</td>
             <td class="cell--number">17</td>
             <td class="cell--number">17</td>
             <td class="cell--number">0</td>
@@ -128,11 +128,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#1578dd667a5453c2c02d568bc27e8ca07d8678fd" class="src_link" title="spec/word_spec.rb">spec/word_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">69</td>
-            <td class="cell--number">44</td>
-            <td class="cell--number">44</td>
+            <td class="cell--number">78</td>
+            <td class="cell--number">50</td>
+            <td class="cell--number">50</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.11</td>
+            <td class="cell--number">1.12</td>
             
           </tr>
         
@@ -158,7 +158,7 @@
     <h3>app.rb</h3>
     <h4>
       <span class="green">
-  100.0%
+  90.48%
 </span>
 
       lines covered
@@ -167,9 +167,9 @@
     
 
     <div class="t-line-summary">
-      <b>18</b> relevant lines.
-      <span class="green"><b>18</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>21</b> relevant lines.
+      <span class="green"><b>19</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
 
     
@@ -476,6 +476,61 @@
           </li>
         </div>
       
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">get(&#39;/words/:id&#39;) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">  @word = Word.find(params[:id].to_i())</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">  erb(:word)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
     </ol>
   </pre>
 </div>
@@ -526,8 +581,8 @@
     
 
     <div class="t-line-summary">
-      <b>19</b> relevant lines.
-      <span class="green"><b>19</b> lines covered</span> and
+      <b>21</b> relevant lines.
+      <span class="green"><b>21</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -627,8 +682,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="20" data-linenumber="9">
-            <span class="hits">20</span>
+          <li class="covered" data-hits="22" data-linenumber="9">
+            <span class="hits">22</span>
             
 
             
@@ -638,8 +693,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="20" data-linenumber="10">
-            <span class="hits">20</span>
+          <li class="covered" data-hits="22" data-linenumber="10">
+            <span class="hits">22</span>
             
 
             
@@ -770,8 +825,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="10" data-linenumber="22">
-            <span class="hits">10</span>
+          <li class="covered" data-hits="11" data-linenumber="22">
+            <span class="hits">11</span>
             
 
             
@@ -814,8 +869,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="26">
-            <span class="hits">7</span>
+          <li class="covered" data-hits="8" data-linenumber="26">
+            <span class="hits">8</span>
             
 
             
@@ -825,8 +880,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="27">
-            <span class="hits">7</span>
+          <li class="covered" data-hits="8" data-linenumber="27">
+            <span class="hits">8</span>
             
 
             
@@ -902,7 +957,40 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="34">
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def update(name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    @name = name</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="36">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
             
             
 
@@ -913,7 +1001,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="35">
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="39">
             
             
 
@@ -1238,6 +1337,138 @@
           </li>
         </div>
       
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="25">
+            
+            
+
+            
+
+            <code class="ruby"># describe(&#39;create a definition for the word&#39;, {:type =&gt; :feature}) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">#   it(&#39;goes to the word page and writes a definition&#39;) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">#     visit(&#39;/&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby">#     click_on(&#39;Add a New Word&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="29">
+            
+            
+
+            
+
+            <code class="ruby">#     fill_in(&#39;name&#39;, :with =&gt; &#39;Lordoone&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">#     click_on(&#39;So It Shall Be Written&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">#     click_on(&#39;Lordoone&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby">#     click_on(&#39;Write a new definition&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="33">
+            
+            
+
+            
+
+            <code class="ruby">#   end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="34">
+            
+            
+
+            
+
+            <code class="ruby"># end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="35">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
     </ol>
   </pre>
 </div>
@@ -1257,8 +1488,8 @@
     
 
     <div class="t-line-summary">
-      <b>44</b> relevant lines.
-      <span class="green"><b>44</b> lines covered</span> and
+      <b>50</b> relevant lines.
+      <span class="green"><b>50</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1358,8 +1589,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="9">
-            <span class="hits">6</span>
+          <li class="covered" data-hits="7" data-linenumber="9">
+            <span class="hits">7</span>
             
 
             
@@ -1914,7 +2145,7 @@
 
             
 
-            <code class="ruby">      word = Word.new({:name =&gt; &quot;forum&quot;, :id =&gt; nil})</code>
+            <code class="ruby">      word = Word.new({:name =&gt; &quot;reff&quot;, :id =&gt; nil})</code>
           </li>
         </div>
       
@@ -1936,7 +2167,7 @@
 
             
 
-            <code class="ruby">      word2 = Word.new({:name =&gt; &quot;forum&quot;, :id =&gt; nil})</code>
+            <code class="ruby">      word2 = Word.new({:name =&gt; &quot;alis&quot;, :id =&gt; nil})</code>
           </li>
         </div>
       
@@ -1996,7 +2227,95 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="67">
+          <li class="covered" data-hits="1" data-linenumber="67">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe(&#39;#update&#39;) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="68">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it(&#39;will update a word&#39;) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="69">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      word = Word.new({:name =&gt; &quot;reff&quot;, :id =&gt; nil})</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="70">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      word.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="71">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      word.update({:name =&gt; &quot;alis&quot;})</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="72">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(word.name).to(eq({:name=&gt; &quot;alis&quot;}))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="73">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="74">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="75">
             
             
 
@@ -2007,7 +2326,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="68">
+          <li class="never" data-hits="" data-linenumber="76">
             
             
 
@@ -2018,7 +2337,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="69">
+          <li class="never" data-hits="" data-linenumber="77">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="78">
             
             
 

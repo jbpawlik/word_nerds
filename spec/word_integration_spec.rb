@@ -21,3 +21,15 @@ describe('create a new word', {:type => :feature}) do
     expect(page).to have_content('Lordoone')
   end
 end
+
+# describe('create a definition for the word', {:type => :feature}) do
+#   it('goes to the word page and writes a definition') do
+#     visit('/')
+#     click_on('Add a New Word')
+#     fill_in('name', :with => 'Lordoone')
+#     click_on('So It Shall Be Written')
+#     click_on('Lordoone')
+#     click_on('Write a new definition')
+#   end
+# end
+

@@ -56,11 +56,20 @@ describe('#word') do
 
   describe('.find') do
     it("will find a word by its id") do
-      word = Word.new({:name => "forum", :id => nil})
+      word = Word.new({:name => "reff", :id => nil})
       word.save
-      word2 = Word.new({:name => "forum", :id => nil})
+      word2 = Word.new({:name => "alis", :id => nil})
       word2.save
       expect(Word.find(word2.id)).to(eq(word2))
+    end
+  end
+
+  describe('#update') do
+    it('will update a word') do
+      word = Word.new({:name => "reff", :id => nil})
+      word.save
+      word.update({:name => "alis"})
+      expect(word.name).to(eq({:name=> "alis"}))
     end
   end
 
