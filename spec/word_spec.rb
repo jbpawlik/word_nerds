@@ -54,4 +54,16 @@ describe('#word') do
     end
   end
 
+  describe('.find') do
+    it("will find a word by its id") do
+      word = Word.new({:name => "forum", :id => nil})
+      word.save
+      word2 = Word.new({:name => "forum", :id => nil})
+      word2.save
+      expect(Word.find(word2.id)).to(eq(word2))
+    end
+  end
+
+
+
 end

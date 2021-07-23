@@ -24,3 +24,4 @@ post('/words') do
   word.save
   redirect to('/words')
 end
+
