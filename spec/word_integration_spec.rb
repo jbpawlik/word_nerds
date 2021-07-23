@@ -26,7 +26,7 @@ describe('update a word name', {:type => :feature}) do
   it('goes to the edit word page and enters a new name') do
     visit('/')
     click_on('Lordoone')
-    click_on('Edit Word')
+    click_on('Lordoone')
     fill_in('name', :with => 'Drolene')
     click_on('Rename Word')
     expect(page).to have_content('Drolene')
@@ -37,7 +37,7 @@ describe('delete a word', {:type => :feature}) do
   it('goes to the edit page and deletes the word') do
     visit('/')
     click_on('Drolene')
-    click_on('Edit Word')
+    click_on('Drolene')
     click_on('Delete Word')
     expect(page).to have_no_content('Drolene')
   end

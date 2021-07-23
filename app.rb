@@ -62,9 +62,3 @@ post('/words/:id') do
   erb(:word)
 end
 
-# post('/words') do
-#   name = params[:name]
-#   word = Word.new({:name => name, :id => nil})
-#   word.save
-#   redirect to('/words')
-# end
