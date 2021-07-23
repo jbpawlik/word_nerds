@@ -64,5 +64,14 @@ describe('#definition') do
     end
   end
 
+  describe('#update') do
+    it('will update a definition') do
+      definition = Definition.new({:meaning => 'porridge', :id => nil})
+      definition.save
+      definition.update({:meaning => "slop"})
+      expect(definition.meaning).to(eq({:meaning=> "slop"}))
+    end
+  end
+
 
 end
