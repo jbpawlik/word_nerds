@@ -1,0 +1,9 @@
+<h4>Add a definition:</h4>
+
+<form action="/words/<%= @word.id %>" method="post">
+  <div class="form-group">
+    <label for="definition_name">definition name</label>
+    <input id="definition_name" name="definition_name" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn">Add definition</button>
+</form>

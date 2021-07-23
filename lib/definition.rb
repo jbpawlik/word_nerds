@@ -1,5 +1,5 @@
 class Definition
-  attr_reader :id
+  attr_reader :definition_id
   attr_accessor :meaning
 
     @@definitions = {}
@@ -7,7 +7,7 @@ class Definition
 
   def initialize(attributes)
     @meaning = attributes.fetch(:meaning)
-    @id = attributes.fetch(:id) || @@total_rows += 1
+    @definition_id = attributes.fetch(:definition_id) || @@total_rows += 1
   end
 
   def self.all
@@ -27,6 +27,16 @@ class Definition
     @@total_rows = 0
   end
 
+  def self.find_by_word(wrd_id)
+    definitions = []
+    @@definitions.values.each do |definition|
+      if definition.word_id == wrd_id
+        definitions.push(definition)
+      end
+    end
+    definitions
+  end
+
   def self.find(id)
     @@definitions[id]
   end
@@ -39,5 +49,8 @@ class Definition
     @@definitions.delete(self.id)
   end
 
+  def word
+    Word.find(self.word_id)
+  end
 
 end

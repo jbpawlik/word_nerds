@@ -1,8 +1,18 @@
 <h2>Word Name: <%= @word.name %></h2>
-
-
-<h4><a href="/words/definition/new">Write a New Definition</a></h4>
-
-
 <p><a href="/words/<%= @word.id %>/edit">Edit Word</a></p>
+
+<h3>Definitions for the word:</h3>
+
+  <% if @word.definitions %>
+    <ul>
+      <% @word.definitions.each do |definition| %>
+        <li><a href="/words/<%= @word.id %>/definitions/<%= definition.id %>"><%= definition.name %></a></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>There are no definitions listed for this word yet.</p>
+  <% end %>
+
+<h4><a href="/words/<%= @word.id %>/new">Write a New Definition</a></h4>
+
 <p><a href="/words">Return to Word List</a></p>

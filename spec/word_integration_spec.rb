@@ -26,6 +26,7 @@ describe('update a word name', {:type => :feature}) do
   it('goes to the edit word page and enters a new name') do
     visit('/')
     click_on('Lordoone')
+    save_and_open_page
     click_on('Edit Word')
     fill_in('name', :with => 'Drolene')
     click_on('Rename Word')

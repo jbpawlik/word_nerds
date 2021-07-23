@@ -6,3 +6,4 @@ gem 'pry'
 gem 'sinatra-contrib'
 gem 'capybara'
 gem 'simplecov', require: false, group: :test
+gem 'launchy'
