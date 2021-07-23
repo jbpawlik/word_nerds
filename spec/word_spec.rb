@@ -4,7 +4,11 @@ require 'rspec'
 require 'word'
 
 describe('#word') do
-  
+
+  before(:each) do
+    Word.clear
+  end
+
   describe('.all') do
     it('returns an empty array when there are no words') do
     expect(Word.all).to(eq([]))
@@ -19,9 +23,16 @@ describe('#word') do
     end
   end
 
+  # describe('.all') do
+  #   it('returns saved Words') do
+  #     word = Word.new({:name => 'reff', :id => nil})
+  #     word.save
+  #     expect(Word.all).to(eq([word]))
+  #   end
+  # end
 
-  # describe('#save') do
-  #   it('saves a word') do
+  # describe('#==') do
+  #   it('is the same word if it has the same attributes as another word') do
   #     word = Word.new({:name => 'reff', :id => nil})
   #     word.save
   #     expect(Word.all).to(eq([word]))

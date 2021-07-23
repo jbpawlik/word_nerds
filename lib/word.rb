@@ -18,7 +18,6 @@ class Word
     self.name == word_to_compare.name
   end
 
-
   def save
     @@words[self.id] = Word.new({:name => self.name, :id => self.id})
   end
