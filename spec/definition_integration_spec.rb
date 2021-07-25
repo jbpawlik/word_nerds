@@ -30,3 +30,13 @@ describe('updates the definition for a word', {:type => :feature}) do
     expect(page).to have_content('slop')
   end
 end
+
+describe('delete a definition', {:type => :feature}) do
+  it('deletes a definition from the word page') do
+    visit('/')
+    click_on('Heemdrol')
+    click_on('slop')
+    click_on('Delete Definition')
+    expect(page).to have_no_content('slop')
+  end
+end
