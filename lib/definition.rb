@@ -23,9 +23,21 @@ class Definition
     @@definitions[self.definition_id] = Definition.new({:meaning => self.meaning, :word_id => self.word_id, :definition_id => self.definition_id})
   end
 
+  def self.find(id)
+    @@definitions[id]
+  end
+
+  def update(meaning)
+    @meaning = meaning
+  end
+
   def self.clear
     @@definitions = {}
     @@total_rows = 0
+  end
+
+  def delete
+    @@definitions.delete(self.definition_id)
   end
 
   def self.find_by_word(wrd_id)
@@ -36,18 +48,6 @@ class Definition
       end
     end
     definitions
-  end
-
-  def self.find(id)
-    @@definitions[id]
-  end
-
-  def update(meaning)
-    @meaning = meaning
-  end
-
-  def delete
-    @@definitions.delete(self.definition_id)
   end
 
   def word

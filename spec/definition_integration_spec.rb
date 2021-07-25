@@ -19,3 +19,14 @@ describe('create a definition for the word', {:type => :feature}) do
     expect(page).to have_content('porridge')
   end
 end
+
+describe('updates the definition for a word', {:type => :feature}) do
+  it('goes to the definition edit page and updates the meaning') do
+    visit('/')
+    click_on('Heemdrol')
+    click_on('porridge')
+    fill_in('name', :with => 'slop')
+    click_on('Rename definition')
+    expect(page).to have_content('slop')
+  end
+end

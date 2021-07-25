@@ -45,15 +45,21 @@ end
 delete('/words/:id') do
   @word = Word.find(params[:id].to_i())
   @word.delete
-  redirect to('/words')
+  redirect to('/words/:id')
 end
 
 #Definition routes
-
 get('/words/:id/new') do
   @word = Word.find(params[:id].to_i())
   erb(:new_definition)
 end
+
+# get('/words/:id') do
+#   @word = Word.find(params[:id].to_i())
+#   definition = Definition.new({:meaning => params[:definition_meaning], :word_id => @word.id, :definition_id => nil})
+#   definition.save
+#   erb(:word)
+# end
 
 post('/words/:id') do
   @word = Word.find(params[:id].to_i())
@@ -62,3 +68,15 @@ post('/words/:id') do
   erb(:word)
 end
 
+get('/words/:id/definitions/:definition_id') do
+  @definition = Definition.find(params[:definition_id].to_i())
+  @word = Word.find(params[:id].to_i())
+  erb(:definition)
+end
+
+patch('/words/:id/definitions/:definition_id') do
+  @word = Word.find(params[:id].to_i())
+  @definition = Definition.find(params[:definition_id].to_i())
+  @definition.update(params[:name])
+  erb(:word)
+end
