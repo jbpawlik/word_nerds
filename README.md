@@ -7,15 +7,18 @@ Word Nerds is a site that allows students to submit their own definitions for wo
 
 
 ### __Technologies Used__
-Word Nerds was written in Ruby. Routing was handled by Sinatra. Debugging was handled by the Pry gem. Testing was done with the RSpec, Capybara, and simplecov gems. A custom Ruby script created the project directory and files. Page content is written as embedded Ruby/HTML, with styling from CSS.
+Word Nerds was written in Ruby. Routing was handled by Sinatra. Debugging was handled by the Pry gem. Testing was done with the RSpec, Capybara, and simplecov gems. A custom Ruby script created the project directory and files. Page content is written as embedded Ruby/HTML, with styling from CSS. The project is deployed on Heroku.
 
 ### __Setup/Installation__
 Setup for this project assumes that you have Ruby installed on your personal computer. Ruby can be downloaded [here](https://www.ruby-lang.org/en/downloads/)
 1. Download or clone the [repository](http://github.com/jbpawlik/word_nerds) to your local machine
 2. Navigate to the top level of the directory
 3. Open your terminal in this directory
-4. To start the site, type "ruby app.rb"
+4. To start the site, type "ruby app.rb". The site should open in your browser; if it does not, type localhost:4567 into your browser's address bar (if necessary, check the localhost path by reading the Sinatra log displayed in the terminal after 'ruby app.rb')
 5. To check the specifications, type "rspec" without quotes. RSpec will run the logic specifications, then Capybara will run the integration specs
+6. When finished viewing the site, disconnect from Sinatra by navigating to the terminal window and typing ctrl-C
+
+Alternately, visit the site at [Heroku](https://wordnerds.herokuapp.com)
 
 ### __Known Bugs / Future Goals__
 No bugs have been found or reported. Please contact the author if you experience poor performance.
@@ -23,7 +26,7 @@ No bugs have been found or reported. Please contact the author if you experience
 Future goals for __Word Nerds__:
 1. Allow user to include pictures with their definitions
 2. Allow user to see the actual definition of a word (if word is real)
-3. Allows users to see words at random
+3. Allow user to see a word at random
 
 ### __License__
 This software is licensed under the [BSD license](license.txt).
