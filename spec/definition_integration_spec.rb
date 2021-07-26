@@ -26,7 +26,7 @@ describe('updates the definition for a word', {:type => :feature}) do
     click_on('Heemdrol')
     click_on('porridge')
     fill_in('name', :with => 'slop')
-    click_on('Rename definition')
+    click_on('Change Definition')
     expect(page).to have_content('slop')
   end
 end
@@ -36,7 +36,7 @@ describe('delete a definition', {:type => :feature}) do
     visit('/')
     click_on('Heemdrol')
     click_on('slop')
-    click_on('Delete Definition')
+    click_on('Remove Definition')
     expect(page).to have_no_content('slop')
   end
 end
