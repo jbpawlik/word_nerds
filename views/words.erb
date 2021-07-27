@@ -7,7 +7,7 @@
 
 <h3>Pick a word from the list (or add your own). Go to the word's page to write a definition for it. It's okay if you do not know what the word means. If enough people like your definition, they will start using it, and that's how words are defined.</h3>
 
-<% if @words.any? %>
+<h2><% if @words.any? %>
   <ul>
     <% @words.each do |word| %>
     <li><a href="/words/<%= word.id %>"><%= word.name %></a></li>
@@ -16,6 +16,6 @@
 
   <% else %>
     <h3>There are no words to display. Do you want to make a new one?</h3>
-  <% end %>
+  <% end %></h2>
 <br>
-  <h4><a href="/words/new">Add a New Word</a></h4>
+  <h3><a href="/words/new">Add a New Word</a></h3>

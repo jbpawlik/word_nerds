@@ -1,18 +1,16 @@
 
-<h1>Update meaning: <%= @definition.meaning %></h1>
+<h1>Update meaning: <br><br> <%= @definition.meaning %></h1>
 
 <form action="/words/<%= @word.id %>/definitions/<%= @definition.definition_id %>" method="post">
   <input name="_method" type="hidden" value="patch">
-  <div>
-    <label for="name"></label>
-    <input id="name" name="name" type="text" required>
-  </div>
+  <label for="name"></label>
+  <input id="name" name="name" type="text" required>
   <button type="submit">Change Definition</button>
 </form>
-
+<br>
 <form action="/words/<%= @word.id %>/definitions/<%= @definition.definition_id %>" method="post">
   <input name="_method" type="hidden" value="delete">
-  <button type="submit">Remove Definition</button> 
+  <button type="submit">Remove Definition</button>
 </form>
 
-<p><a href="/words/<%= @word.id %>">Return to Word</a></p>
+<h3><a href="/words/<%= @word.id %>">Return to Word</a></h3>

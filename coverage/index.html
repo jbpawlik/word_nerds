@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-07-26T07:11:58-07:00">2021-07-26T07:11:58-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-07-27T08:04:54-07:00">2021-07-27T08:04:54-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -73,7 +73,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#27498f084818a275ce625998e9936507f988485c" class="src_link" title="app.rb">app.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">89</td>
+            <td class="cell--number">82</td>
             <td class="cell--number">54</td>
             <td class="cell--number">54</td>
             <td class="cell--number">0</td>
@@ -796,57 +796,57 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="57">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"># get(&#39;/words/:id&#39;) do</code>
+            
+
+            <code class="ruby">post(&#39;/words/:id&#39;) do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="58">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="58">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   @word = Word.find(params[:id].to_i())</code>
+            
+
+            <code class="ruby">  @word = Word.find(params[:id].to_i())</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="59">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="59">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   definition = Definition.new({:meaning =&gt; params[:definition_meaning], :word_id =&gt; @word.id, :definition_id =&gt; nil})</code>
+            
+
+            <code class="ruby">  definition = Definition.new({:meaning =&gt; params[:definition_meaning], :word_id =&gt; @word.id, :definition_id =&gt; nil})</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="60">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="60">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   definition.save</code>
+            
+
+            <code class="ruby">  definition.save</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="61">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="61">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   erb(:word)</code>
+            
+
+            <code class="ruby">  erb(:word)</code>
           </li>
         </div>
       
@@ -857,7 +857,7 @@
 
             
 
-            <code class="ruby"># end</code>
+            <code class="ruby">end</code>
           </li>
         </div>
       
@@ -879,89 +879,12 @@
 
             
 
-            <code class="ruby">post(&#39;/words/:id&#39;) do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="65">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  @word = Word.find(params[:id].to_i())</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="66">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  definition = Definition.new({:meaning =&gt; params[:definition_meaning], :word_id =&gt; @word.id, :definition_id =&gt; nil})</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="67">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  definition.save</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="68">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  erb(:word)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="69">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="70">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="71">
-            <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">get(&#39;/words/:id/definitions/:definition_id&#39;) do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="72">
+          <li class="covered" data-hits="2" data-linenumber="65">
             <span class="hits">2</span>
             
 
@@ -972,7 +895,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="73">
+          <li class="covered" data-hits="2" data-linenumber="66">
             <span class="hits">2</span>
             
 
@@ -983,13 +906,90 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="74">
+          <li class="covered" data-hits="2" data-linenumber="67">
             <span class="hits">2</span>
             
 
             
 
             <code class="ruby">  erb(:definition)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="68">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="69">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="70">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">patch(&#39;/words/:id/definitions/:definition_id&#39;) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="71">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  @word = Word.find(params[:id].to_i())</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="72">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  @definition = Definition.find(params[:definition_id].to_i())</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="73">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  @definition.update(params[:name])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="74">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  erb(:word)</code>
           </li>
         </div>
       
@@ -1022,7 +1022,7 @@
 
             
 
-            <code class="ruby">patch(&#39;/words/:id/definitions/:definition_id&#39;) do</code>
+            <code class="ruby">delete(&#39;/words/:id/definitions/:definition_id&#39;) do</code>
           </li>
         </div>
       
@@ -1033,7 +1033,7 @@
 
             
 
-            <code class="ruby">  @word = Word.find(params[:id].to_i())</code>
+            <code class="ruby">  @definition = Definition.find(params[:definition_id].to_i())</code>
           </li>
         </div>
       
@@ -1044,7 +1044,7 @@
 
             
 
-            <code class="ruby">  @definition = Definition.find(params[:definition_id].to_i())</code>
+            <code class="ruby">  @definition.delete</code>
           </li>
         </div>
       
@@ -1055,7 +1055,7 @@
 
             
 
-            <code class="ruby">  @definition.update(params[:name])</code>
+            <code class="ruby">  @word = Word.find(params[:id].to_i())</code>
           </li>
         </div>
       
@@ -1072,83 +1072,6 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="82">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="83">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="84">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">delete(&#39;/words/:id/definitions/:definition_id&#39;) do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="85">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  @definition = Definition.find(params[:definition_id].to_i())  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="86">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  @definition.delete</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="87">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  @word = Word.find(params[:id].to_i())</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="88">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  erb(:word)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="89">
             
             
 

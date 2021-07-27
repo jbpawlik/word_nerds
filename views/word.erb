@@ -1,10 +1,9 @@
 
-<h2><a href="/words/<%= @word.id %>/edit"><%= @word.name %></a></h2>
-<h6>(click to edit word)</h6>
+<h1><a href="/words/<%= @word.id %>/edit"><%= @word.name %></a> (edit word)</h1>
 
 <h3>Possible meanings:</h3>
 
-<% if @word.definitions.any? %>
+<h3><% if @word.definitions.any? %>
     <ul>
       <% @word.definitions.each do |definition| %>
         <li><a href="/words/<%= @word.id %>/definitions/<%= definition.definition_id %>"><%= definition.meaning %></a></li>
@@ -12,9 +11,9 @@
     </ul>
     <a href="/words/<%= @word.id %>/new">Add another meaning?</a>
   <% else %>
-    <h4>Nobody knows... <a href="/words/<%= @word.id %>/new">unless you do?</a></h4>
-  <% end %>
+    <h3>Nobody knows... <a href="/words/<%= @word.id %>/new">unless you do?</a></h3>
+  <% end %></h3>
 
 <h4></h4>
-
-<p><a href="/words">Back to Word List</a></p>
+<br>
+<h3><a href="/words">Back to Word List</a></h3>
