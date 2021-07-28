@@ -45,7 +45,7 @@ end
 delete('/words/:id') do
   @word = Word.find(params[:id].to_i())
   @word.delete
-  redirect to('/words/:id')
+  redirect to('/words')
 end
 
 #Definition routes
